@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+type: software
+title: "CipherShield: Classical and Post-Quantum Cryptography Laboratory"
+abstract: >-
+  An educational Python laboratory for authenticated hybrid encryption,
+  digital signatures, and exploratory comparisons of classical and
+  NIST-standardized post-quantum cryptographic primitives.
+authors:
+  - family-names: Singh
+    given-names: Karamjot
+version: 0.1.0
+date-released: 2026-09-23
+repository-code: "https://github.com/karamjotsinghbusiness-web/Quantum-Encryption-using-NIST-Kyber-and-others"
+url: "https://github.com/karamjotsinghbusiness-web/Quantum-Encryption-using-NIST-Kyber-and-others"
+keywords:
+  - post-quantum cryptography
+  - ML-KEM
+  - ML-DSA
+  - hybrid encryption
+  - digital signatures
+  - cryptography education
+references:
+  - type: standard
+    title: "FIPS 203: Module-Lattice-Based Key-Encapsulation Mechanism Standard"
+    authors:
+      - name: National Institute of Standards and Technology
+    institution:
+      name: National Institute of Standards and Technology
+    year: 2024
+    doi: "10.6028/NIST.FIPS.203"
+  - type: standard
+    title: "FIPS 204: Module-Lattice-Based Digital Signature Standard"
+    authors:
+      - name: National Institute of Standards and Technology
+    institution:
+      name: National Institute of Standards and Technology
+    year: 2024
+    doi: "10.6028/NIST.FIPS.204"

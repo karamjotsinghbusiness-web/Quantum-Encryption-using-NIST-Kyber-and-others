@@ -98,6 +98,16 @@ class EncryptedPayload:
             "ciphertext": b64(self.ciphertext),
         }
 
+    @classmethod
+    def from_dict(cls, data: dict) -> "EncryptedPayload":
+        """Restore a payload exported by :meth:`to_dict`."""
+        return cls(
+            algorithm=data["algorithm"],
+            wrapped_key=unb64(data["wrapped_key"]),
+            nonce=unb64(data["nonce"]),
+            ciphertext=unb64(data["ciphertext"]),
+        )
+
 
 # ---------------------------------------------------------------------------
 # RSA-OAEP + AES-256-GCM hybrid encryption

@@ -1,3 +1,0 @@
-cryptography>=42.0
-matplotlib>=3.7
-pqcrypto>=1.0.0

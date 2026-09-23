@@ -37,6 +37,7 @@ from crypto_backends import (
     RSASignEngine, ECDSAEngine, DilithiumEngine,
     PQCRYPTO_AVAILABLE, EncryptedPayload, b64,
 )
+from experiment import build_benchmark_record
 
 # ---------------------------------------------------------------------------
 # Theme
@@ -243,6 +244,7 @@ class CipherShieldApp:
         self.last_payload: dict[str, EncryptedPayload] = {}
         self.last_signature: dict[str, tuple[bytes, bytes]] = {}  # name -> (message, signature)
         self.benchmark_results: list[dict] = []
+        self.benchmark_iterations = 0
 
         self._build_menu()
         self._build_header()
@@ -723,6 +725,7 @@ class CipherShieldApp:
             iterations = max(1, int(self.bench_iters.get()))
         except ValueError:
             iterations = 5
+        self.benchmark_iterations = iterations
         self.bench_btn.configure(state="disabled")
         self.bench_progress.start(12)
         self.log_panel.log(f"Running benchmark ({iterations} iteration(s) per algorithm)…", "info")
@@ -837,10 +840,7 @@ class CipherShieldApp:
                                              initialfile="benchmark_results.json")
         if not path:
             return
-        payload = {
-            "generated_at": datetime.now().isoformat(timespec="seconds"),
-            "results": self.benchmark_results,
-        }
+        payload = build_benchmark_record(self.benchmark_results, self.benchmark_iterations)
         with open(path, "w", encoding="utf-8") as f:
             json.dump(payload, f, indent=2)
         self.log_panel.log(f"Benchmark results exported to {path}", "success")
