@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">CipherShield social preview</title>
+  <desc id="desc">Classical and post-quantum cryptography laboratory featuring ML-KEM-768 and ML-DSA-65.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#07172d"/>
+      <stop offset="0.55" stop-color="#0d2742"/>
+      <stop offset="1" stop-color="#124c55"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#55e6c1"/>
+      <stop offset="1" stop-color="#7dd3fc"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1280" height="640" rx="28" fill="url(#background)"/>
+  <g opacity="0.13" stroke="#8bead1" fill="none">
+    <path d="M0 110 H1280 M0 210 H1280 M0 310 H1280 M0 410 H1280 M0 510 H1280"/>
+    <path d="M120 0 V640 M260 0 V640 M400 0 V640 M540 0 V640 M680 0 V640 M820 0 V640 M960 0 V640 M1100 0 V640"/>
+  </g>
+  <g transform="translate(82 93)">
+    <path d="M112 8 L202 43 V126 C202 198 164 247 112 272 C60 247 22 198 22 126 V43 Z" fill="#0a2037" stroke="url(#accent)" stroke-width="8" filter="url(#glow)"/>
+    <path d="M75 130 L101 156 L153 99" fill="none" stroke="#55e6c1" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="112" cy="337" r="13" fill="#55e6c1"/>
+    <circle cx="55" cy="366" r="8" fill="#7dd3fc"/>
+    <circle cx="169" cy="366" r="8" fill="#7dd3fc"/>
+    <path d="M112 350 V406 M104 406 H120 M62 370 L95 397 M162 370 L129 397" stroke="#7dd3fc" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(390 142)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <text x="0" y="0" fill="#55e6c1" font-size="24" font-weight="700" letter-spacing="4">EDUCATIONAL CRYPTOGRAPHY LAB</text>
+    <text x="0" y="100" fill="#ffffff" font-size="78" font-weight="800">CipherShield</text>
+    <rect x="0" y="132" width="704" height="5" rx="2.5" fill="url(#accent)"/>
+    <text x="0" y="198" fill="#d9f6f2" font-size="33" font-weight="600">Classical + post-quantum constructions</text>
+    <text x="0" y="252" fill="#a9c8d2" font-size="28">ML-KEM-768 • ML-DSA-65 • AES-256-GCM</text>
+    <g transform="translate(0 310)" font-size="21" font-weight="700">
+      <rect width="190" height="50" rx="25" fill="#143c4a" stroke="#55e6c1"/>
+      <text x="95" y="33" text-anchor="middle" fill="#d9fff6">REPRODUCIBLE</text>
+      <rect x="210" width="150" height="50" rx="25" fill="#143c4a" stroke="#7dd3fc"/>
+      <text x="285" y="33" text-anchor="middle" fill="#e0f4ff">TESTED</text>
+      <rect x="380" width="214" height="50" rx="25" fill="#143c4a" stroke="#a78bfa"/>
+      <text x="487" y="33" text-anchor="middle" fill="#efe8ff">RESEARCH LAB</text>
+    </g>
+  </g>
+  <text x="1198" y="594" text-anchor="end" fill="#8fb1bd" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="20">github.com/karamjotsinghbusiness-web</text>
+</svg>

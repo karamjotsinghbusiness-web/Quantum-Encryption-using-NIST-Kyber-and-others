@@ -1,0 +1,26 @@
+name: Research or methodology question
+description: Ask about scope, experiment design, or interpretation.
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: State one focused question.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context and evidence
+      description: Link the relevant file, result, standard, or primary source.
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope check
+      options:
+        - label: I understand this repository is an educational lab, not a production cryptosystem or security certification.
+          required: true

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security report
+    url: https://github.com/karamjotsinghbusiness-web/Quantum-Encryption-using-NIST-Kyber-and-others/security/advisories/new
+    about: Privately report a potential security vulnerability.
+  - name: Questions and ideas
+    url: https://github.com/karamjotsinghbusiness-web/Quantum-Encryption-using-NIST-Kyber-and-others/discussions
+    about: Start a discussion instead of filing a bug.
