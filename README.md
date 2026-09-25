@@ -1,11 +1,18 @@
 # CipherShield: Classical and Post-Quantum Cryptography Laboratory
 
 [![CI](https://github.com/karamjotsinghbusiness-web/Quantum-Encryption-using-NIST-Kyber-and-others/actions/workflows/ci.yml/badge.svg)](https://github.com/karamjotsinghbusiness-web/Quantum-Encryption-using-NIST-Kyber-and-others/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/karamjotsinghbusiness-web/Quantum-Encryption-using-NIST-Kyber-and-others/actions/workflows/codeql.yml/badge.svg)](https://github.com/karamjotsinghbusiness-web/Quantum-Encryption-using-NIST-Kyber-and-others/actions/workflows/codeql.yml)
+[![Release](https://img.shields.io/github/v/release/karamjotsinghbusiness-web/Quantum-Encryption-using-NIST-Kyber-and-others?display_name=tag)](https://github.com/karamjotsinghbusiness-web/Quantum-Encryption-using-NIST-Kyber-and-others/releases/latest)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/downloads/)
 
 CipherShield is an educational desktop laboratory for comparing classical and
 post-quantum public-key cryptography in one Python application. It implements
 authenticated hybrid encryption, digital signatures, tamper-detection tests,
 and an exploratory benchmark that exports self-describing JSON records.
+
+**Start here:** follow the [60-second demonstration](docs/demo.md), inspect the
+[architecture](docs/architecture.md), or download the
+[latest source release](https://github.com/karamjotsinghbusiness-web/Quantum-Encryption-using-NIST-Kyber-and-others/releases/latest).
 
 The project is built around two questions:
 
@@ -56,6 +63,9 @@ python -m pip install -r requirements.txt
 python main.py
 ```
 
+The application opens a local Tkinter interface. No account, network service,
+API key, or real sensitive data is required.
+
 On Debian or Ubuntu, install Tk separately if necessary:
 
 ```bash
@@ -97,6 +107,13 @@ flowchart LR
 
 See [Architecture](docs/architecture.md) for the trust boundaries and data
 flow.
+
+## Demonstration
+
+The [guided demonstration](docs/demo.md) walks through classical and
+post-quantum encryption, signature verification, deliberate tampering, and a
+reproducible benchmark export. It uses synthetic text only and explains what
+each result does—and does not—prove.
 
 ## Experiments and benchmark interpretation
 
