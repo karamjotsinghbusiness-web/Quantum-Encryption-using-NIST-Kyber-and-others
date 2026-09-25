@@ -1,3 +1,3 @@
 cryptography==50.0.1
-matplotlib==3.9.4
+matplotlib==3.11.2
 pqcrypto==1.0.0
